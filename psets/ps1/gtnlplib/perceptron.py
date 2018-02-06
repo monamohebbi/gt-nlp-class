@@ -44,12 +44,12 @@ def estimate_perceptron(x,y,N_its):
     weight_history = []
     for it in range(N_its):
         print("iteration " + str(it))
-        # temp = 0
+        temp = 0
         for x_i,y_i in zip(x,y):
             weights = perceptron_update(x_i, y_i, weights, labels)
-            # temp += 1
-            # if temp % 400 == 0:
-            #     print("success")
+            temp += 1
+            if temp % 400 == 0:
+                print(temp)
         weight_history.append(weights.copy())
     return weights, weight_history
 

@@ -26,7 +26,7 @@ def aggregate_counts(bags_of_words):
     '''
     # YOUR CODE GOES HERE
     counts = Counter()
-    # print(bags_of_words)
+
     for lyric in bags_of_words:
         counts.update(lyric)
     return counts

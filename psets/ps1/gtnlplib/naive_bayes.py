@@ -15,7 +15,7 @@ def get_corpus_counts(x,y,label):
     :rtype: defaultdict
 
     """
-    corpus_count = defaultdict(lambda:0)
+    corpus_count = defaultdict(float)
     for i in range(len(y)):
         if y[i] == label:
             for word, count in x[i].items():
@@ -77,11 +77,9 @@ def estimate_nb(x,y,smoothing):
 
     for label in labels:
         counts = estimate_pxy(x, y, label, smoothing, vocab)
-        # print(sum(np.exp(list(counts.values()))))
-        for word, prob in counts.items():
-            
-            doc_counts[(label, word)] = prob
-
+        counts = clf_base.make_feature_vector(counts, label)
+        doc_counts.update(counts)
+        doc_counts[(label, OFFSET)] = np.log(label_dict[label] / len(y))
     return doc_counts
 
 # deliverable 3.4
@@ -94,12 +92,26 @@ def find_best_smoother(x_tr,y_tr,x_dv,y_dv,smoothers):
     :param x_dv: dev instances
     :param y_dv: dev labels
     :param smoothers: list of smoothing values
-    :returns: best smoothing value
-    :rtype: float
+    :returns: best smoothing value that gives the best accuracy on the dev set
+    :returns: dictionary mapping smoothing value to the accuracy obtained on dev set
+    :rtype: float, dict
 
     '''
+    scores = defaultdict(float)
+    i = 0
+    j = 0
+    for smoothing in smoothers:
+        print("i = " + str(i))
+        i += 1
+        weights = estimate_nb(x_tr, y_tr, smoothing)
+        accurate = float(0)
+        for x_i, y_i in zip(x_dv, y_dv):
+            predict = clf_base.predict(x_i, weights, list(set(y_tr)))
+            if predict[0] == y_i:
+                accurate += 1
+        scores[smoothing] = accurate / float(len(y_dv))
 
-    raise NotImplementedError
+    return clf_base.argmax(scores), scores
 
 
 

@@ -15,8 +15,12 @@ def get_corpus_counts(x,y,label):
     :rtype: defaultdict
 
     """
-
-    raise NotImplementedError
+    corpus_count = defaultdict(lambda:0)
+    for i in range(len(y)):
+        if y[i] == label:
+            for word, count in x[i].items():
+                corpus_count[word] += count
+    return corpus_count
 
 # deliverable 3.2
 def estimate_pxy(x,y,label,smoothing,vocab):
@@ -32,8 +36,18 @@ def estimate_pxy(x,y,label,smoothing,vocab):
     :rtype: defaultdict of log probabilities per word
 
     '''
+    probabilities = defaultdict(float)
+    count = get_corpus_counts(x, y, label)
+    for v in vocab:
+        probabilities[v] = estimate_helper(v, count, smoothing, vocab)
+    return probabilities
 
-    raise NotImplementedError
+def estimate_helper(x_i, count, alpha, vocab):
+    num = alpha + count[x_i]
+    denom = alpha * len(vocab)
+    for v in vocab:
+        denom += count[v]
+    return np.log(num/denom)
 
 # deliverable 3.3
 def estimate_nb(x,y,smoothing):
@@ -48,10 +62,27 @@ def estimate_nb(x,y,smoothing):
     """
     
     labels = set(y)
-    counts = defaultdict(float)
     doc_counts = defaultdict(float)
-    
-    raise NotImplementedError
+    counts = defaultdict(float)
+    label_dict = {}
+    vocab = set()
+
+    for x_i in x:
+        vocab = vocab.union(set(x_i))
+
+    vocab = list(vocab)
+
+    for y_i in y:
+        label_dict[y_i] = float(label_dict.get(y_i, 0) + 1)
+
+    for label in labels:
+        counts = estimate_pxy(x, y, label, smoothing, vocab)
+        # print(sum(np.exp(list(counts.values()))))
+        for word, prob in counts.items():
+            
+            doc_counts[(label, word)] = prob
+
+    return doc_counts
 
 # deliverable 3.4
 def find_best_smoother(x_tr,y_tr,x_dv,y_dv,smoothers):

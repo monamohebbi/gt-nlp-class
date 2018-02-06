@@ -12,8 +12,8 @@ def bag_of_words(text):
     :returns: a Counter for a single document
     :rtype: Counter
     '''
-    
-    raise NotImplementedError
+    words = text.split()
+    return Counter(words)
 
 # deliverable 1.2
 def aggregate_counts(bags_of_words):
@@ -24,9 +24,11 @@ def aggregate_counts(bags_of_words):
     :returns: an aggregated bag of words for the whole corpus
     :rtype: Counter
     '''
-
-    counts = Counter()
     # YOUR CODE GOES HERE
+    counts = Counter()
+    # print(bags_of_words)
+    for lyric in bags_of_words:
+        counts.update(lyric)
     return counts
 
 # deliverable 1.3
@@ -39,8 +41,7 @@ def compute_oov(bow1, bow2):
     :returns: the set of words in bow1, but not in bow2
     :rtype: set
     '''
-    
-    raise NotImplementedError
+    return set(bow1) - set(bow2)
 
 # deliverable 1.4
 def prune_vocabulary(training_counts, target_data, min_counts):
@@ -53,9 +54,21 @@ def prune_vocabulary(training_counts, target_data, min_counts):
     :returns: list of words in pruned vocabulary
     :rtype: list of Counters, set
     '''
-    
-    raise NotImplementedError
-    return target_data, vocab
+    vocab = set()
+    for word in training_counts:
+        if training_counts[word] >= min_counts:
+            vocab.add(word)
+    i = 0
+    pruned_target_data = []
+    for counter in target_data:
+        pruned_counter = Counter()
+        for word, count in counter.items():
+            if word in vocab:
+                pruned_counter[word] = count
+        pruned_target_data.append(pruned_counter)
+
+    vocab = list(vocab)
+    return pruned_target_data, vocab
 
 # deliverable 5.1
 def make_numpy(bags_of_words, vocab):
@@ -68,12 +81,18 @@ def make_numpy(bags_of_words, vocab):
     :rtype: numpy array
     '''
     vocab = sorted(vocab)
-
-    raise NotImplementedError
-
-
-
-
+    height = len(bags_of_words)
+    width = len(vocab)
+    ndArray = np.zeros((height, width))
+    for i in range(len(bags_of_words)):
+        for word,count in bags_of_words[i].items():
+            try:
+                index = vocab.index(word)
+            except ValueError:
+                index = -1
+            if index >= 0:
+                ndArray[i][index] = count
+    return ndArray
 ### helper code
 
 def read_data(filename,label='Era',preprocessor=bag_of_words):
@@ -82,3 +101,4 @@ def read_data(filename,label='Era',preprocessor=bag_of_words):
 
 def oov_rate(bow1,bow2):
     return len(compute_oov(bow1,bow2)) / len(bow1.keys())
+

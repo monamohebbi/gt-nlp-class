@@ -1,6 +1,7 @@
 from gtnlplib.constants import OFFSET
 import numpy as np
 
+
 # hint! use this.
 def argmax(scores):
     items = list(scores.items())
@@ -21,8 +22,12 @@ def make_feature_vector(base_features,label):
     :rtype: dict
 
     '''
-
-    raise NotImplementedError
+    features = {}
+    for word in base_features:
+        count = base_features[word]
+        features[(label, word)] = count
+    features[(label, OFFSET)] = 1
+    return features
 
 # deliverable 2.2
 def predict(base_features,weights,labels):
@@ -36,8 +41,15 @@ def predict(base_features,weights,labels):
     :rtype: string, dict
 
     '''
-    
-    raise NotImplementedError
+    scores = {}
+    base_features[OFFSET] = 1
+    for pair, weight in weights.items():
+        word = pair[1]
+        era = pair[0]
+        scores[era] = scores.get(era, 0) + base_features.get(word, 0) * weight
+    for label in labels:
+        if scores.get(label, 0) == 0:
+            scores[label] = 0
     return argmax(scores),scores
 
 def predict_all(x,weights,labels):

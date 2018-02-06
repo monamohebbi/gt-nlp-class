@@ -17,8 +17,8 @@ def build_linear(X_tr, Y_tr):
     :rtype: PyTorch model
     '''
     #change these
-    size1 = 100
-    size2 = 2
+    size1 = X_tr.shape[1]
+    size2 = len(set(Y_tr))
 
     model = torch.nn.Sequential()
     model.add_module("Linear",torch.nn.Linear(size1, size2, bias = True))
@@ -28,7 +28,8 @@ def build_linear(X_tr, Y_tr):
 # deliverable 5.3
 def log_softmax(scores):
     '''
-    Compute the (log of the) softmax given the scores
+    Compute the (log of the) softmax given the s
+    cores
 
     Hint: Use logsumexp
 

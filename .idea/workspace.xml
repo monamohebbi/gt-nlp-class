@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b45934fe-95cb-4891-a5e4-ccd50c119585" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/psets/ps1/.ipynb_checkpoints/pset1-checkpoint.ipynb" afterPath="$PROJECT_DIR$/psets/ps1/.ipynb_checkpoints/pset1-checkpoint.ipynb" />
+      <change beforePath="$PROJECT_DIR$/psets/ps1/gtnlplib/features.py" afterPath="$PROJECT_DIR$/psets/ps1/gtnlplib/features.py" />
+      <change beforePath="$PROJECT_DIR$/psets/ps1/gtnlplib/logreg.py" afterPath="$PROJECT_DIR$/psets/ps1/gtnlplib/logreg.py" />
       <change beforePath="$PROJECT_DIR$/psets/ps1/gtnlplib/naive_bayes.py" afterPath="$PROJECT_DIR$/psets/ps1/gtnlplib/naive_bayes.py" />
       <change beforePath="$PROJECT_DIR$/psets/ps1/gtnlplib/perceptron.py" afterPath="$PROJECT_DIR$/psets/ps1/gtnlplib/perceptron.py" />
-      <change beforePath="$PROJECT_DIR$/psets/ps1/gtnlplib/preproc.py" afterPath="$PROJECT_DIR$/psets/ps1/gtnlplib/preproc.py" />
       <change beforePath="$PROJECT_DIR$/psets/ps1/pset1.ipynb" afterPath="$PROJECT_DIR$/psets/ps1/pset1.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="preproc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/preproc.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -31,8 +34,8 @@
       <file leaf-file-name="clf_base.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/clf_base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -40,25 +43,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="naive_bayes.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/naive_bayes.py">
+      <file leaf-file-name="logreg.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/logreg.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="79" column="60" lean-forward="true" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
+            <state relative-caret-position="440">
+              <caret line="110" column="66" lean-forward="true" selection-start-line="110" selection-start-column="66" selection-end-line="110" selection-end-column="66" />
               <folding>
-                <element signature="e#0#37#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="perceptron.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/perceptron.py">
+      <file leaf-file-name="features.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="597">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+            <state relative-caret-position="581">
+              <caret line="97" column="40" lean-forward="true" selection-start-line="97" selection-start-column="40" selection-end-line="97" selection-end-column="40" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,6 +73,8 @@
     <findStrings>
       <find>OFFSET</find>
       <find>argmax</find>
+      <find>x_tr</find>
+      <find>x_t</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -81,13 +86,15 @@
         <option value="$PROJECT_DIR$/psets/ps1/gtnlplib/preproc.py" />
         <option value="$PROJECT_DIR$/psets/ps1/gtnlplib/clf_base.py" />
         <option value="$PROJECT_DIR$/psets/ps1/gtnlplib/naive_bayes.py" />
+        <option value="$PROJECT_DIR$/psets/ps1/gtnlplib/logreg.py" />
         <option value="$PROJECT_DIR$/psets/ps1/gtnlplib/perceptron.py" />
+        <option value="$PROJECT_DIR$/psets/ps1/gtnlplib/features.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1681" />
-    <option name="y" value="-22" />
+    <option name="x" value="1528" />
+    <option name="y" value="-8" />
     <option name="width" value="1260" />
     <option name="height" value="944" />
   </component>
@@ -106,7 +113,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -144,6 +150,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -181,22 +188,22 @@
     <frame x="1272" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18511905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13690476" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -204,16 +211,48 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/features.py">
+    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/preproc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/clf_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/naive_bayes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="79" column="60" lean-forward="false" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
           <folding>
             <element signature="e#0#37#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/perceptron.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="10" lean-forward="false" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -228,20 +267,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/clf_base.py">
+    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/naive_bayes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="10" />
+        <state relative-caret-position="-2">
+          <caret line="66" column="19" lean-forward="true" selection-start-line="66" selection-start-column="19" selection-end-line="66" selection-end-column="19" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/naive_bayes.py">
+    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/clf_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="79" column="60" lean-forward="true" selection-start-line="79" selection-start-column="60" selection-end-line="79" selection-end-column="60" />
+        <state relative-caret-position="357">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -250,10 +289,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/perceptron.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        <state relative-caret-position="310">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/logreg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="110" column="66" lean-forward="true" selection-start-line="110" selection-start-column="66" selection-end-line="110" selection-end-column="66" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/psets/ps1/gtnlplib/features.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="97" column="40" lean-forward="true" selection-start-line="97" selection-start-column="40" selection-end-line="97" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

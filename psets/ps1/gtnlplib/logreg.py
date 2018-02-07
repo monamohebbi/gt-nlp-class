@@ -37,8 +37,16 @@ def log_softmax(scores):
     :returns: the softmax result
     :rtype: numpy array
     '''
+    return log_reg_helper(scores, 1)
 
-    raise NotImplementedError
+def log_reg_helper(scores, additive_inverse):
+    softmax = np.zeros((scores.shape[0], scores.shape[1]))
+    for r in range(scores.shape[0]):
+        row = list(scores[r, :])
+        sub = logsumexp(row)
+        for c in range(len(row)):
+            softmax[r, c] = (additive_inverse * row[c]) - sub
+    return softmax
 
 # deliverable 5.4
 def nll_loss(logP, Y_tr):
@@ -51,8 +59,12 @@ def nll_loss(logP, Y_tr):
     :returns: the NLL loss
     :rtype: float
     '''
+    sum = float(0)
+    for r in range(logP.shape[0]):
+        row = list(logP[r, :])
+        sum += row[Y_tr[r]]
 
-    raise NotImplementedError
+    return -1 * sum / logP.shape[0]
 
 
 ######################### helper code

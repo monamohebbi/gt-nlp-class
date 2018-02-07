@@ -98,11 +98,7 @@ def find_best_smoother(x_tr,y_tr,x_dv,y_dv,smoothers):
 
     '''
     scores = defaultdict(float)
-    i = 0
-    j = 0
     for smoothing in smoothers:
-        print("i = " + str(i))
-        i += 1
         weights = estimate_nb(x_tr, y_tr, smoothing)
         accurate = float(0)
         for x_i, y_i in zip(x_dv, y_dv):
